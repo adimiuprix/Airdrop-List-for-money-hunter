@@ -8,27 +8,26 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="public/media/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url(); ?>/public/media/favicon.png">
 
     <!-- Dependencies CSS -->
-    <link rel="stylesheet" href="public/dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/fontawesome/css/all.min.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/flaticon/flaticon.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/jvectormap/css/jquery-jvectormap-2.0.3.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/fullcalendar/main.min.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/select2/css/select2.min.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/bootstrap-colorpicker/bootstrap-colorpicker.min.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/flatpicker/css/flatpickr.min.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/quill/quill.core.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/quill/quill.snow.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/meanmenu/css/meanmenu.min.css" type="text/css">
-
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/fontawesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/flaticon/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/jvectormap/css/jquery-jvectormap-2.0.3.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/fullcalendar/main.min.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/select2/css/select2.min.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/bootstrap-colorpicker/bootstrap-colorpicker.min.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/flatpicker/css/flatpickr.min.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/quill/quill.core.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/quill/quill.snow.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/dependencies/meanmenu/css/meanmenu.min.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="public/assets/css/app.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/assets/css/app.css" type="text/css">
 
     <!-- Switcher Only -->
-    <link rel="stylesheet" href="public/switcher/css/switcher.css" id="switcher-css" type="text/css" media="all">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/switcher/css/switcher.css" id="switcher-css" type="text/css" media="all">
 
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400&amp;display=swap" rel="stylesheet">
@@ -40,7 +39,7 @@
     <div id="preloader" class="preloader-wrap">
         <div class="preloader-content">
             <figure class="preloader-logo">
-                <img src="public/media/logo.png" alt="Logo">
+                <img src="<?= base_url(); ?>/public/media/logo.png" alt="Logo">
             </figure>
             <div class="preloader-text">Dashy</div>
         </div>
@@ -59,7 +58,7 @@
                                 <div class="col-md-2">
                                     <div class="logo-area">
                                         <a href="<?php echo base_url(); ?>" class="temp-logo">
-                                            <img src="public/media/logo-large.png" alt="logo" class="img-fluid">
+                                            <img src="<?= base_url(); ?>/public/media/logo-large.png" alt="logo" class="img-fluid">
                                         </a>
                                     </div>
                                 </div>
@@ -107,7 +106,7 @@
                                     <div class="col-xxl-4 col-md-6">
                                         <div class="connection-box">
                                             <div class="item-img">
-                                                <img src="public/media/airdroplist/1.jpeg" alt="Thumb">
+                                                <img src="<?= base_url(); ?>/public/media/airdroplist/1.jpeg" alt="Thumb">
                                             </div>
                                             <div class="item-content">
                                                 <h3 class="item-title"><?= $list['name_project']; ?></h3>
@@ -121,7 +120,7 @@
                                                         <a href="#"><i class="fab fa-pinterest-p"></i></a>
                                                     </div>
                                                     <div class="btn-wrap">
-                                                        <a href="" class="item-btn">Read more</a>
+                                                        <a href="<?= site_url('airdrop-detail/' . $list['slug']); ?>" class="item-btn">Read more</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -156,35 +155,35 @@
         </div>
     </div>    
     <!-- Dependencies Js -->
-    <script src="public/dependencies/jquery/js/jquery.min.js"></script>
-    <script src="public/dependencies/popper.js/js/popper.min.js"></script>
-    <script src="public/dependencies/bootstrap/js/bootstrap.min.js"></script>
-    <script src="public/dependencies/chart.js/js/Chart.min.js"></script>
-    <script src="public/dependencies/apexchart/apexcharts.min.js"></script>
-    <script src="public/dependencies/apexchart/irregular-data-series.js"></script>
-    <script src="public/dependencies/apexchart/ohlc.js"></script>
-    <script src="public/dependencies/jvectormap/js/jquery-jvectormap-2.0.3.min.js"></script>
-    <script src="public/dependencies/jvectormap/js/jquery-jvectormap-world-mill.js"></script>
-    <script src="public/dependencies/jvectormap/js/jquery-jvectormap-us-aea.js"></script>
-    <script src="public/dependencies/jvectormap/js/gdp-data.js"></script>
-    <script src="public/dependencies/fullcalendar/main.min.js"></script>
-    <script src="public/dependencies/select2/js/select2.min.js"></script>
-    <script src="public/dependencies/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
-    <script src="public/dependencies/flatpicker/js/flatpickr.min.js"></script>
-    <script src="public/dependencies/quill/quill.min.js"></script>
-    <script src="public/dependencies/meanmenu/js/jquery.meanmenu.min.js"></script>
-    <script src="public/assets/js/chart.js"></script>
-    <script src="public/assets/js/apex-chart.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/jquery/js/jquery.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/popper.js/js/popper.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/chart.js/js/Chart.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/apexchart/apexcharts.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/apexchart/irregular-data-series.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/apexchart/ohlc.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/jvectormap/js/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/jvectormap/js/jquery-jvectormap-world-mill.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/jvectormap/js/jquery-jvectormap-us-aea.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/jvectormap/js/gdp-data.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/fullcalendar/main.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/select2/js/select2.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/flatpicker/js/flatpickr.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/quill/quill.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/meanmenu/js/jquery.meanmenu.min.js"></script>
+    <script src="<?= base_url(); ?>/public/assets/js/chart.js"></script>
+    <script src="<?= base_url(); ?>/public/assets/js/apex-chart.js"></script>
 
 
     <!-- Preloader Js -->
-    <script src="public/dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="<?= base_url(); ?>/public/dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
     <!-- Custom Js -->
-    <script src="public/assets/js/app.js"></script>
+    <script src="<?= base_url(); ?>/public/assets/js/app.js"></script>
 
     <!-- Switcher -->
-    <script src="public/switcher/js/switcher.js"></script>
+    <script src="<?= base_url(); ?>/public/switcher/js/switcher.js"></script>
 
     <script>var page_name = "connections.html";</script>
 </body>

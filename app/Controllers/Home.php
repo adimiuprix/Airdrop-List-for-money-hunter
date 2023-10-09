@@ -9,7 +9,7 @@ class Home extends BaseController
     {
         $model = new AirdropModel();
         $data['airdrops'] = $model->findAll();
-
+        
         return view('home', $data);
     }
 
@@ -17,12 +17,12 @@ class Home extends BaseController
     {
         $model = new AirdropModel();
 
-        $data['detail'] = $model->where('name_project', $slug)->first();
-        dd($data);
+        $data['detail'] = $model->where('slug', $slug)->first();
+
         if (empty($data['detail'])) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Posting tidak ditemukan.');
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Post not found.');
         }
         
-        return view('blogtampil', $data);
+        return view('details', $data);
     }
 }
