@@ -19,6 +19,10 @@ class ListAirdrops extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => 255
             ],
+            'slug' => [
+                'type'       => 'VARCHAR',
+                'constraint' => 255
+            ],
             'image' => [
                 'type'       => 'VARCHAR',
                 'constraint' => 255
