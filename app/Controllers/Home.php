@@ -22,7 +22,6 @@ class Home extends BaseController
         if (empty($data['detail'])) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Post not found.');
         }
-
         return view('details', $data);
     }
 

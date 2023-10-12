@@ -20,12 +20,9 @@
             <div class="card-body">
                 <div class="single-email">
                     <div class="mail-details">
-                        <h4 class="text-xtrabold text-body text-center mb-3">Nama Project</h4>
+                        <h4 class="text-xtrabold text-body text-center mb-3"><?= $detail['name_project']; ?></h4>
                         <p>
-                            Project blabla is a structured derivatives ecosystem offering synthetic derivatives that granularize risk-adjusted rewards for traders with smart leverage, while providing cryptocurrency operators with sufficiently deep liquidity pools for effective hedging.
-                        </p>
-                        <p>
-                            Project blabla is a project incubated by Binance and has also confirmed to launch their own token called DRV. Early users who try out their testnet may likely become eligible for an airdrop when they launch their token.
+                            <?= $detail['description']; ?>
                         </p>
                     </div>
                 </div>
@@ -37,7 +34,7 @@
             <div class="card-body">
                 <div class="item-heading">
                     <h3 class="text-xtrabold text-body mb-1">Step-by-Step Guide:</h3>
-                    <div class="text-gray text-15">Panduan Langkah-demi-Langkah "Nama project"</div>
+                    <div class="text-gray text-15">Follow step by step to get rewarded</div>
                 </div>
                 <div class="single-email">
                     <div class="mail-details">
